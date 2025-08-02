@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Float Example</title>
+    <style>
+      .float-img {
+        float: right;
+        width: 180px;
+        margin: 0 20px 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      }
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      body {
+        background: #f0f8ff;
+        color: #222;
+        font-family: Arial, sans-serif;
+        padding: 30px;
+      }
+      h1 {
+        color: #0077b6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Float Example</h1>
+    <div class="clearfix">
+      <img src="/IMAGES/dog_play_concerns_214189.jpg" alt="Floating Example" class="float-img">
+      <p>
+         In this example the Dog image is floated to the right using the above said code.</p>
+      </p>The text can either be wrapped  around the image,or placed by the side of the image demonstrating how float works. You can use float to create magazine-style layouts, align images, or build navigation bars.
+      <p>
+       
+    </div>
+  </body>
+</html>
