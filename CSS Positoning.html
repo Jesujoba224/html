@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                border: 3px solid blue;
+                margin-bottom: 30px;
+                padding: 10px;
+            }
+            div.absolute {
+                position: absolute;
+                left: 50px;
+                border: 3px solid red;
+            }
+            div.relative {
+                position:relative;
+                left: 100px;
+                border: 3px solid orange;
+            }
+            div.fixed {
+                position: fixed;
+                top: 0;
+                right: 20px;
+                width:300px;
+                border: 3px solid yellow;
+            }
+            div.sticky {
+                    position: sticky;
+                    top: 1px;
+                    left: 20px;
+                    width:100px;
+                    border: 3px solid green;
+                }
+                </style>
+                </head>
+                <body>
+                    <!--change the position to show the diference 
+                    static
+                    relative
+                    fixed
+                    absolute
+                    sticky-->
+                    <h2>LETTER WRITING </h2>
+                <div>
+                    This is the introductory part of a topic or letter.
+                </div>
+                <div class="sticky">
+                    This is the body of the topic or letter.
+                </div>
+                <div class="relative">
+                    This is the conclusion part of a topic or letter.
+                    <div class="absolute">This is the signatory part of the topic or letter.</div>
+                </div>
+                <div class="fixed">
+                    This can be used for the heading of a topic or address of a letter.
+                </div>              
+                </body>
+                </html>
