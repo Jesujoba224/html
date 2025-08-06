@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                right: 10px;
+                border: 5px dashed #FF5733;
+                background: #F0E68C;
+                margin-bottom: 20px;
+                padding: 15px;
+                font-size: 1.1em;
+            }
+            div.absolute {
+                position: absolute;
+                left: 120px;
+                top: 40px;
+                border: 4px dotted #2980B9;
+                background: #AED6F1;
+                width: 180px;
+                color: #154360;
+            }
+            div.relative {
+                position: relative;
+                left: 60px;
+                top: 20px;
+                border: 4px solid #27AE60;
+                background: #D5F5E3;
+                width: 350px;
+                color: #145A32;
+            }
+            div.fixed {
+                position: fixed;
+                top: 10px;
+                right: 40px;
+                width: 220px;
+                border: 4px double #8E44AD;
+                background: #F5EEF8;
+                color: #512E5F;
+            }
+            div.sticky {
+                position: sticky;
+                top: 30px;
+                left: 40px;
+                width: 160px;
+                border: 4px groove #F39C12;
+                background: #FEF9E7;
+                color: #7D6608;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- change the position to show the difference
+         static
+         relative
+         fixed
+         absolute
+         sticky-->
+         <h2>POSITIONING IN CSS</h2>
+        <div>
+            This is a static div with no position property. It uses a dashed orange border and khaki background.
+        </div>
+        <div class="sticky">
+            This is a sticky div. It uses a groove orange border and a light yellow background.
+        </div>
+        <div class="relative">
+            This div element has position relative. It uses a solid green border and pale green background.
+            <div class="absolute">
+                This is an absolutely positioned div inside the relative div. It uses a dotted blue border and light blue background.
+            </div>
+        </div>
+        <div class="fixed">
+            This is a fixed div. It uses a double purple border and a light purple background.
+        </div>
+        <div style="height: 600px;"></div>
+         </body>
+</html>
