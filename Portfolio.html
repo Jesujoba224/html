@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jesujoba Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .portfolio-header {
+            background: #343a40;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .services .card {
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        /* Navbar custom styles */
+        .navbar-nav .nav-link {
+            position: relative;
+            transition: color 0.2s;
+        }
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #ffc107 !important;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ffc107;
+            transition: width .3s;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Jesujoba</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="portfolio-header" id="home">
+        <div class="container">
+            <h1>Jesujoba</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            Hello! I'm Jesujoba, a passionate web developer with experience in creating responsive and user-friendly websites. I love turning ideas into reality using modern web technologies.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container services">
+        <h2 class="section-title">Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Web Development</h5>
+                    <p class="card-text">Building modern and responsive websites using HTML, CSS, and Bootstrap.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">UI/UX Design</h5>
+                    <p class="card-text">Designing intuitive user interfaces and experiences for web and mobile applications.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Consulting</h5>
+                    <p class="card-text">Providing expert advice on web projects, best practices, and technology choices.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> jesujobaonabamiji54@gmail.com</p>
+            <p><strong>Phone:</strong> +234 704 991 1114</p>
+            <p><strong>Location:</strong> Osun/Ondo, Nigeria</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
