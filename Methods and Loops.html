@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Random Numbers, Current Date, and Rounded Random Number</h2>
+    <p id="numbers"></p>
+    <p id="date"></p>
+    <p id="rounded"></p>
+    <script>
+        // Generate a random set of numbers using a loop
+        var nums = [];
+        for (var i = 0; i < 5; i++) {
+            nums.push(Math.floor(Math.random() * 100)); // Random numbers between 0 and 99
+        }
+        document.getElementById("numbers").innerHTML = "Random numbers: " + nums.join(", ");
+
+        // Display current date
+        var currentDate = new Date();
+        document.getElementById("date").innerHTML = "Current date: " + currentDate.toLocaleString();
+
+        // Generate a random number and round it
+        var randomNum = Math.random() * 100;
+        var roundedNum = Math.round(randomNum);
+        document.getElementById("rounded").innerHTML = "Rounded random number: " + roundedNum;
+    </script>
+</body>
+</html>
