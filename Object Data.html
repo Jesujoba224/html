@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Object and Array Data Display</h2>
+    <p id="objectDisplay"></p>
+    <p id="arrayIndex"></p>
+    <p id="arrayJoin"></p>
+    <p id="arrayPop"></p>
+    <script>
+      // Object variable
+      var student = {
+        name: "Onabamiji Jesujoba",
+        age: 16,
+        course: "Mechanical Engineering"
+      };
+
+      // Array variable
+      var subjects = ["Engineering Mathematics", "Fundamentals of Fluid Mechanics", "Engineering Analysis", "Engineering Graphics and Solid Modelling"];
+
+      // Display object properties using keys
+      document.getElementById("objectDisplay").innerHTML =
+        "Name: " + student.name + "<br>" +
+        "Age: " + student.age + "<br>" +
+        "Course: " + student.course;
+
+      // Display array element by index
+      document.getElementById("arrayIndex").innerHTML =
+        "Second subject: " + subjects[1];
+
+      // Display whole array using join
+      document.getElementById("arrayJoin").innerHTML =
+        "All subjects: " + subjects.join(", ");
+
+      // Remove last element using pop and display updated array
+      subjects.pop();
+      document.getElementById("arrayPop").innerHTML =
+        "After pop: " + subjects.join(", ");
+    </script>
+  </body>
+</html>
