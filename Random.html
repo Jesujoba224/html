@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Random Numbers with while Loop</h2>
+    <p id="randomNums"></p>
+    <script>
+      let count = 0;
+      let output = "";
+      while (count < 10) {
+        let randNum = Math.floor(Math.random() * 100) + 1; // Random number between 1 and 100
+        output += randNum + " ";
+        count++;
+      }
+      document.getElementById("randomNums").innerHTML = output;
+    </script>
+  </body>
+</html>
