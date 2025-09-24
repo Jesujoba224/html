@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Display Object and Array Data</h2>
+    <p id="objectDisplay"></p>
+    <p id="arrayIndex"></p>
+    <p id="arrayJoin"></p>
+    <p id="arrayPop"></p>
+    <script>
+      // Object variable
+      var person = {
+        firstName: "Onabamiji",
+        lastName: "Jesujoba",
+        age: 16,
+        occupation: "Mechanical Engineer"
+      };
+
+      // Array variable
+      var hobbies = ["Reading", "Cycling", "Painting", "Traveling"];
+
+      // Display object properties using keys
+      document.getElementById("objectDisplay").innerHTML =
+        "Name: " + person.firstName + " " + person.lastName + "<br>" +
+        "Age: " + person.age + "<br>" +
+        "Occupation: " + person.occupation;
+
+      // Display array element by index
+      document.getElementById("arrayIndex").innerHTML =
+        "Second hobby: " + hobbies[1];
+
+      // Display whole array using join
+      document.getElementById("arrayJoin").innerHTML =
+        "All hobbies: " + hobbies.join(", ");
+
+      // Remove last element using pop and display updated array
+      hobbies.pop();
+      document.getElementById("arrayPop").innerHTML =
+        "After pop: " + hobbies.join(", ");
+    </script>
+  </body>
+</html>
