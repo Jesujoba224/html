@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Weebsite</title>
+    <link rel="stylesheet" href="Website.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">
+                <!-- optional logo file: images/logo.png -->
+                <img src="images/logo.png" alt="Logo" class="brand-logo" />
+                <span class="brand-title">My Weebsite</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="main-nav" class="main-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner / Hero -->
+    <section id="home" class="hero">
+        <!-- Provide a banner image at: PRACTICE HTML/images/banner.jpg -->
+        <div class="hero-image" role="img" aria-label="Banner image showing a modern workspace"></div>
+        <div class="hero-content container">
+            <h1>Welcome to My Weebsite</h1>
+            <p class="lead">Beautiful layout, responsive navigation and a striking banner to get you started.</p>
+            <a class="btn" href="#services">Explore Services</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>This section contains information about the website. Add your content here.</p>
+        </section>
+
+        <section id="services" class="section grid">
+            <article class="card">
+                <h3>Service One</h3>
+                <p>Short description of the service offered.</p>
+            </article>
+            <article class="card">
+                <h3>Service Two</h3>
+                <p>Short description of the service offered.</p>
+            </article>
+            <article class="card">
+                <h3>Service Three</h3>
+                <p>Short description of the service offered.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Get in touch through this section. Add contact form or details here.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> My Weebsite</p>
+        </div>
+    </footer>
+
+    <script>
+        // Small JS to toggle mobile nav
+        (function () {
+            const btn = document.querySelector('.nav-toggle');
+            const nav = document.getElementById('main-nav');
+            const yearEl = document.getElementById('year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+                nav.classList.toggle('open');
+            });
+        })();
+    </script>
+</body>
+</html>
