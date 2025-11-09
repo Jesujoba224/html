@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reddedx Bistro — Portfolio</title>
+  <link rel="stylesheet" href="Port.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="../PRACTICE HTML/Restaurant/Restaurant%201.jpg" alt="Reddedx Bistro logo" class="brand-logo" /><br>
+        <span class="brand-title">Reddedx Bistro</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#menu">Menu</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner / Introductory Hero -->
+  <section id="home" class="hero">
+    <div class="hero-image" role="img" aria-label="Restaurant interior" style="background-image:url('../PRACTICE HTML/Restaurant/Restaurant%201.jpg');"></div>
+    <div class="hero-content container">
+      <h1>Fresh flavours. Seasonal produce.</h1>
+      <p class="lead">Discover our chef's specialties and signature dishes. Welcome to Reddedx Bistro — where taste meets tradition.</p>
+      <a class="btn" href="#menu">View Menu</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Introductory paragraph (user requested) -->
+    <section id="intro" class="section">
+      <h2>Welcome</h2>
+      <p>At Reddedx Bistro we celebrate seasonal ingredients and thoughtful preparation. Enjoy our curated menu and warm atmosphere.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+      <h2>Our Menu</h2>
+      <p>Hand-picked seasonal dishes prepared with care. Click any dish in the portfolio for details.</p>
+    </section>
+
+    <!-- Portfolio / Dishes Gallery -->
+    <section id="portfolio" class="section">
+      <h2>Portfolio — Signature Dishes</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="../PRACTICE HTML/Restaurant/Grilled%20Salmon.jpg" alt="Grilled Salmon" style="width:70%;border-radius:8px 8px 0 0" />
+          <h3>Grilled Salmon</h3>
+          <p>Charred citrus salmon, herb butter, seasonal vegetables.</p>
+          <p><strong>Price:</strong> $18</p>
+        </article>
+
+        <article class="card">
+          <img src="../PRACTICE HTML/Restaurant/Truffle%20Pasta.jpg" alt="Truffle Pasta" style="width:70%;border-radius:8px 8px 0 0" />
+          <h3>Truffle Pasta</h3>
+          <p>Handmade pasta, black truffle, parmesan cream.</p>
+          <p><strong>Price:</strong> $15</p>
+        </article>
+
+        <article class="card">
+          <img src="../PRACTICE HTML/Restaurant/Steak%20Frites.jpg" alt="Steak Frites" style="width:70%;border-radius:8px 8px 0 0" />
+          <h3>Steak Frites</h3>
+          <p>Dry-aged steak, garlic butter, crispy fries.</p>
+          <p><strong>Price:</strong> $24</p>
+        </article>
+
+        <article class="card">
+          <img src="../PRACTICE HTML/Restaurant/Vegetarian%20Bowl.jpg" alt="Seasonal Vegan Bowl" style="width:70%;border-radius:8px 8px 0 0" />
+          <h3>Seasonal Vegan Bowl</h3>
+          <p>Roasted vegetables, quinoa, tahini dressing.</p>
+          <p><strong>Price:</strong> $12</p>
+        </article>
+
+        <article class="card">
+          <img src="../PRACTICE HTML/Restaurant/Chef%27s%20Dessert.jpg" alt="Chef's Dessert" style="width:70%;border-radius:8px 8px 0 0" />
+          <h3>Chef's Dessert</h3>
+          <p>Daily pastry selection with compote and cream.</p>
+          <p><strong>Price:</strong> $7</p>
+        </article>
+
+        <article class="card">
+          <img src="../PRACTICE HTML/Restaurant/Signature%20Cocktail.jpg" alt="Signature Cocktail" style="width:70%;border-radius:8px 8px 0 0" />
+          <h3>Signature Cocktail</h3>
+          <p>House mix with seasonal fruit and artisan spirits.</p>
+          <p><strong>Price:</strong> $10</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / Reservations -->
+    <section id="contact" class="section">
+      <h2>Contact & Reservations</h2>
+      <p>Reserve a table or inquire about private events:</p>
+      <p>Email: <a href="mailto:jesujobaonabamiji54@gmail.com">jesujobaonabamiji54@gmail.com</a> — Phone: (+234) 704 991 1114</p>
+    </section>
+  </main>
+
+  <!-- Social Media Section -->
+  <section id="social" class="section" aria-labelledby="social-heading">
+    <div class="container">
+      <h2 id="social-heading">Follow Us</h2>
+      <p>Stay connected for daily specials, events and behind-the-scenes from our kitchen.</p>
+
+      <div class="social-grid" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px;">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Reddedx Bistro on Facebook" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:inherit;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07C2 17.1 5.66 21.25 10.44 21.98v-6.99H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.88h2.74l-.44 2.9h-2.3V22C18.34 21.25 22 17.1 22 12.07z"/>
+          </svg>
+          <span>Facebook</span>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Reddedx Bistro on Instagram" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:inherit;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm6.6-3.6a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Reddedx Bistro on X (Twitter)" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:inherit;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.73 1.04 4.28 4.28 0 0 0-7.3 3.9A12.15 12.15 0 0 1 3.16 4.6a4.28 4.28 0 0 0 1.33 5.71 4.24 4.24 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 3.99 2.97A8.58 8.58 0 0 1 2 19.54a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.38-.02-.57A8.7 8.7 0 0 0 22.46 6z"/>
+          </svg>
+          <span>Twitter</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Reddedx Bistro — All rights reserved.</p>
+      <p style="font-size:0.9rem;color:rgba(255,255,255,0.7);margin-top:6px;">Address: No 54 New York City · Open daily 10:00am-10:00pm</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
