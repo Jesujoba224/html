@@ -1,0 +1,81 @@
+// ...existing code...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bank — Income & Expense Tracker</title>
+  <link rel="stylesheet" href="Bank.css" />
+</head>
+<body>
+  <div class="app" role="application" aria-label="Income and expense tracker">
+    <div class="top">
+      <div class="summary" aria-hidden="false">
+        <div class="tile">
+          <h3>Balance</h3>
+          <p id="balance">$0.00</p>
+        </div>
+        <div class="tile income">
+          <h3>Total Income</h3>
+          <p id="total-income">+$0.00</p>
+        </div>
+        <div class="tile expense">
+          <h3>Total Expense</h3>
+          <p id="total-expense">-$0.00</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div style="text-align:right">
+          <small style="color:var(--muted)">Quick add</small>
+          <div style="display:flex;gap:8px;margin-top:6px">
+            <button id="quick-income" title="Add quick income">+ Income</button>
+            <button id="quick-expense" title="Add quick expense" class="quick-expense">- Expense</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form id="entry-form" class="add" aria-label="Add transaction">
+      <input id="desc" type="text" placeholder="Description" required />
+      <input id="amount" type="number" step="0.01" placeholder="Amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <input id="date" type="date" />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="main">
+      <section class="list" aria-labelledby="transactions-heading">
+        <h3 id="transactions-heading" style="margin:0 0 12px 0">Transactions</h3>
+        <div id="transactions"></div>
+        <div id="empty" class="empty">No transactions yet.</div>
+      </section>
+
+      <aside class="sidebar">
+        <h4 style="margin-top:0">Filters & Tools</h4>
+        <div style="margin-bottom:10px" class="filters" role="toolbar" aria-label="Filters">
+          <button data-filter="all">All</button>
+          <button data-filter="income">Income</button>
+          <button data-filter="expense">Expense</button>
+        </div>
+
+        <div style="margin-top:12px">
+          <label style="display:block;color:var(--muted);margin-bottom:6px">Search</label>
+          <input id="search" type="text" placeholder="Search description" />
+        </div>
+
+        <div style="margin-top:14px">
+          <button id="clear-all" class="clear-all">Clear all</button>
+        </div>
+      </aside>
+    </div>
+
+    <footer>Data saved locally in your browser (localStorage).</footer>
+  </div>
+
+  <script src="Bank.js"></script>
+</body>
+</html>
